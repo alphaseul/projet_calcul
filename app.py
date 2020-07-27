@@ -1,5 +1,7 @@
+import pytest
+
 def calcul(x):
     return x + 5
 
-alpha = calcul(5)
-print(alpha)
+def test_method():
+    assert calcul(5) == 10
