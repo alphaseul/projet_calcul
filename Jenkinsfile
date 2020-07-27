@@ -1,9 +1,9 @@
 pipeline {
-    agent { docker { image 'python' } }
+
     stages {
-        stage('build') {
+        stage('test') {
             steps {
-                sh 'python --version'
+                sh 'pytest app.py'
             }
         }
     }
